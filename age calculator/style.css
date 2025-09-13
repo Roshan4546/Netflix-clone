@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #095686, #6db5c7);
+    color: #fff;
+    padding: 10px;
+}
+.calculator{
+    width: 100%;
+    max-width: 600px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.calculator h1{
+    font-size: 60px;
+}
+.calculator h1 span{
+    color: greenyellow;
+}
+.input-box{
+    margin: 40px 0;
+    padding: 35px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-content: center;
+}
+
+.input-box input{
+    flex: 1;
+    margin-right: 20px;
+    padding: 14px 20px;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
+}
+.input-box button{
+    background: linear-gradient(90deg, #baff6b, #a0ffce);
+    border: none;
+    padding: 15px 30px;
+    outline: none;
+    border-radius: 5px;
+    color: #222;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.input-box button:hover {
+    background: linear-gradient(90deg, #a0ffce, #baff6b);
+    color: #095686;
+}
+.input-box input[type="date"] {
+    position: relative;
+    cursor: pointer;
+}
+
+.input-box input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    cursor: pointer;
+    opacity: 0.8;
+    z-index: 2;
+    /* Make the indicator cover the input for easier clicking */
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: transparent;
+}
+
+.input-box input[type="date"]::-ms-input-placeholder { color: transparent; }
+.input-box input[type="date"]::placeholder { color: transparent; }

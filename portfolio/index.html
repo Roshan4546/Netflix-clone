@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Roshan's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="./images/logo.png" alt="Logo">
+    <nav>
+      <ul>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main Section -->
+  <section class="section-hero">
+    <div class="container grid grid-two--cols">
+      <div class="section-hero--content">
+        <h1 class="hero-heading">Hello I'm Roshan</h1>
+        <p class="hero-para">Welcome to my portfolio! I'm passionate about web development and always eager to learn new technologies.</p>
+        <div class="container-2">
+          <ul>
+            <li><a href="https://www.facebook.com/home.php" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://discord.com/channels/@me" target="_blank" rel="noopener"><i class="fa-brands fa-discord"></i></a></li>
+          </ul>
+        </div>
+        <a href="login.html" id="contact">Login</a>
+      </div>
+      <div class="section-hero--image">
+        <figure>
+          <img src="./images/main-hero.png" alt="Hero Image" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skill" id="skills">
+    <div class="skill-header">
+      <h2>I Learn These Skills</h2>
+      <p>Below are some technologies and languages I've worked with so far.</p>
+    </div>
+    <div class="skill-contanier grid-four--cols">
+      <div><i class="fa-solid fa-c"></i><h3>Programming C</h3><p>Basics of programming and logic building.</p></div>
+      <div><i class="fa-brands fa-html5"></i><h3>HTML</h3><p>Semantic structure and web page building blocks.</p></div>
+      <div><i class="fa-brands fa-css3"></i><h3>CSS</h3><p>Styling modern responsive designs with Flex and Grid.</p></div>
+      <div><i class="fa-brands fa-js"></i><h3>JavaScript</h3><p>DOM manipulation and interactivity on the web.</p></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="project" id="projects">
+    <div class="project-header">
+      <h2>My Projects</h2>
+      <p>Some of the exciting projects I've worked on recently.</p>
+    </div>
+    <div class="project-container grid grid-two--cols">
+      <div><h3>Project 1</h3><p>Landing page using HTML, CSS, and JS.</p></div>
+      <div><h3>Project 2</h3><p>To-do list with add/delete functionality.</p></div>
+      <div><h3>Project 3</h3><p>Simple calculator using JavaScript.</p></div>
+      <div><h3>Project 4</h3><p>Blog layout with responsive design.</p></div>
+    </div>
+  </section>
+
+  <!-- Blogs -->
+  <section class="blog" id="blogs">
+    <div class="blog-header">
+      <h2>Explore My Blogs</h2>
+      <p>Insights, tips, and tutorials I’ve written from my learning journey.</p>
+    </div>
+    <div class="blog-container grid grid-four--cols">
+      <div class="blog-card">
+        <img src="./images/html.jpeg" alt="HTML Blog">
+        <h3>Getting Started with HTML & CSS</h3>
+        <p class="blog-date">April 10, 2025</p>
+        <p>HTML and CSS are the building blocks of the web.</p>
+        <a href="#">Read More →</a>
+      </div>
+      <div class="blog-card">
+        <img src="./images/portfolio.webp" alt="Portfolio Blog">
+        <h3>What I Learned from Building My Portfolio</h3>
+        <p class="blog-date">April 20, 2025</p>
+        <p>The tools I used and challenges I faced while building this site.</p>
+        <a href="#">Read More →</a>
+      </div>
+      <div class="blog-card">
+        <img src="./images/calculator.webp" alt="Calculator Blog">
+        <h3>My First JavaScript Project: A Tip Calculator</h3>
+        <p class="blog-date">May 1, 2025</p>
+        <p>Understanding functions, events, and DOM manipulation.</p>
+        <a href="#">Read More →</a>
+      </div>
+      <div class="blog-card">
+        <img src="./images/githunb.webp" alt="Git Blog">
+        <h3>Version Control with Git & GitHub</h3>
+        <p class="blog-date">May 10, 2025</p>
+        <p>How I learned Git basics and started using GitHub effectively.</p>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section class="resume" id="resume">
+    <div class="resume-container grid grid-two--cols">
+      <div class="resume-content">
+        <h2>My Resume</h2>
+        <p>You can download my resume using the button below.</p>
+        <a href="./resume/my-resume.pdf" download class="resume-btn">
+          <i class="fa-solid fa-download"></i> Download Resume (PDF)
+        </a>
+      </div>
+      <div class="resume-image">
+        <img src="./images/resume.webp" alt="Resume Graphic">
+      </div>
+    </div>
+  </section>
+  <!-- contact -->
+   <section class="contact" id="contacts">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out for collaborations or just a friendly hello 👋</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:you@example.com">roshanpatra275@gmail.com</a></li>
+        <li><strong>Phone:</strong> <a href="tel:+1234567890">+91 (7894075618)</a></li>
+      </ul>
+    </div>
+
+    <!-- Optional Contact Form -->
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- footer -->
+ <footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 Roshan. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="#privacy">Privacy Policy</a></li>
+      <li><a href="#terms">Terms of Service</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+
+</body>
+</html>
